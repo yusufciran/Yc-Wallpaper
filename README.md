@@ -28,50 +28,6 @@ Modern ve profesyonel bir canlı duvar kağıdı (live wallpaper) web sitesi. Ta
 
 [GitHub Pages'de Görüntüle](https://yusufciran.github.io/Yc-Wallpaper/)
 
-## 📦 Kurulum
-
-### GitHub Pages ile Yayınlama
-
-1. Bu repository'yi fork edin veya kendi hesabınıza clone edin:
-```bash
-git clone https://github.com/your-username/yc-wallpaper.git
-cd yc-wallpaper
-```
-
-2. Dosyaları GitHub repository'nize yükleyin:
-```bash
-git add .
-git commit -m "Initial commit"
-git push origin main
-```
-
-3. GitHub repository settings'e gidin:
-   - Settings > Pages
-   - Source: Deploy from a branch
-   - Branch: `main` / `root`
-   - Save
-
-4. Birkaç dakika içinde siteniz `https://your-username.github.io/repository-name/` adresinde yayında!
-
-### Lokal Çalıştırma
-
-Basit bir HTTP server kullanın:
-
-```bash
-# Python 3
-python -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
-
-# Node.js (npx)
-npx serve
-
-# PHP
-php -S localhost:8000
-```
-
-Tarayıcınızda `http://localhost:8000` adresine gidin.
 
 ## 📁 Dosya Yapısı
 
@@ -227,25 +183,13 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 **Your Name**
 
-- GitHub: [@your-username](https://github.com/your-username)
-- Website: [your-website.com](https://your-website.com)
+- GitHub: [@your-username](https://github.com/yusufciran)
 
 ## 🙏 Teşekkürler
 
 - Wallpaper kaynağı: [MotionBGs](https://motionbgs.com)
 - Font: [Google Fonts](https://fonts.google.com)
 - İlham: Modern web tasarım trendleri
-
-## 📸 Ekran Görüntüleri
-
-### Ana Sayfa
-*Buraya ekran görüntüsü ekleyebilirsiniz*
-
-### Detay Sayfası
-*Buraya ekran görüntüsü ekleyebilirsiniz*
-
-### Beğenilenler Sayfası
-*Buraya ekran görüntüsü ekleyebilirsiniz*
 
 ---
 
