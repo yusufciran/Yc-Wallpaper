@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Detayı - Motion Wallpapers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="detail-page">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content detail-header-new">
+                <div class="header-left-section">
+                    <a href="index.html" class="back-btn-detail">
+                        ← Geri Dön
+                    </a>
+                </div>
+                <div class="header-right-section">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">YC</span>
+                        <span class="logo-text">WALLPAPER</span>
+                    </a>
+                    <a href="favorites.html" class="favorites-link-small">
+                        <span class="favorites-icon">❤️</span>
+                        <span class="favorites-count" id="favorites-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Detail Content -->
+    <section class="detail-content">
+        <div class="container">
+            <div class="detail-wrapper">
+                <!-- Main Preview -->
+                <div class="detail-preview">
+                    <div class="video-container">
+                        <video 
+                            id="detail-video" 
+                            class="detail-video"
+                            autoplay 
+                            loop 
+                            muted
+                            playsinline
+                        >
+                            <source src="" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Info Panel -->
+                <div class="detail-info">
+                    <div class="detail-title-row">
+                        <h1 class="detail-title" id="detail-title">Yükleniyor...</h1>
+                        <button class="detail-favorite-btn" id="detail-favorite-btn">
+                            🤍
+                        </button>
+                    </div>
+                    
+                    <div class="detail-actions">
+                        <a 
+                            href="#" 
+                            class="download-btn download-btn-4k" 
+                            id="download-4k"
+                            target="_blank"
+                        >
+                            <span class="download-icon">⬇</span>
+                            <div class="download-info">
+                                <span class="download-label">4K İndir</span>
+                                <span class="download-quality">3840x2160</span>
+                            </div>
+                        </a>
+                        
+                        <a 
+                            href="#" 
+                            class="download-btn download-btn-hd" 
+                            id="download-hd"
+                            target="_blank"
+                        >
+                            <span class="download-icon">⬇</span>
+                            <div class="download-info">
+                                <span class="download-label">HD İndir</span>
+                                <span class="download-quality">1920x1080</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Section -->
+    <section class="recommended">
+        <div class="container">
+            <h2 class="section-title">Benzer Duvar Kağıtları</h2>
+            <div class="wallpapers-grid" id="recommended-grid">
+                <!-- Recommended wallpapers will be loaded here -->
+            </div>
+            
+            <!-- Load More Button for Recommendations -->
+            <div class="load-more-container">
+                <button class="load-more-btn" id="load-more-recommended-btn" style="display: none;">
+                    Daha Fazla Öneri Yükle
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Yc Wallpaper. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

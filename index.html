@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yc Wallpaper - Canlı Duvar Kağıtları</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">YC</span>
+                    <span class="logo-text">WALLPAPER</span>
+                </h1>
+                <div class="header-right">
+                    <a href="favorites.html" class="favorites-link">
+                        <span class="favorites-icon">❤️</span>
+                        <span class="favorites-label">Beğenilenler</span>
+                        <span class="favorites-count" id="favorites-count">0</span>
+                    </a>
+                    <div class="header-stats">
+                        <span class="stat" id="wallpaper-count">0</span>
+                        <span class="stat-label">Duvar Kağıdı</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Masaüstünüze Hayat Verin</h2>
+                <p class="hero-subtitle">Binlerce premium hareketli duvar kağıdını keşfedin</p>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        id="search-input"
+                        placeholder="Arama yapın... (örn: anime, nature, cyberpunk)"
+                    >
+                    <button class="search-btn" id="search-btn">
+                        <span>🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="anime">Anime</button>
+                <button class="filter-btn" data-filter="game">Oyun</button>
+                <button class="filter-btn" data-filter="nature">Doğa</button>
+                <button class="filter-btn" data-filter="cyberpunk">Cyberpunk</button>
+                <button class="filter-btn" data-filter="fantasy">Fantasy</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wallpapers Grid -->
+    <section class="wallpapers">
+        <div class="container">
+            <div class="wallpapers-grid" id="wallpapers-grid">
+                <!-- Wallpapers will be loaded here dynamically -->
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="load-more-btn" id="load-more-btn">
+                    Daha Fazla Yükle
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Yc Wallpaper. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
